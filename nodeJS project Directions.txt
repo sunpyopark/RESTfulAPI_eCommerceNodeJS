@@ -1,0 +1,26 @@
+<Download MongoDB>
+https://www.mongodb.com/download-center/community
+
+
+<Project Install>
+git clone https://github.com/krandmm/eCommerceNodeJS.git
+cd eCommerceNodeJS
+npm install
+code .
+
+npm init
+npm install express mongoose body-parser nodemon --save
+
+nodemon
+
+http://localhost:3000/api/products/
+
+POSTMAN
+{
+    "image" : "LG mobile",
+    "detail" : "LG",
+    "price" : 900,
+    "shipping_cost" : 90
+}
+
+https://vuejsexamples.com/tag/shopping/

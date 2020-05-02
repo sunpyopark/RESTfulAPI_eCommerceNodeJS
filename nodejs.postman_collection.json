@@ -1,0 +1,478 @@
+{
+	"info": {
+		"_postman_id": "a41b320b-ce15-408d-b923-72bd6de1eb1f",
+		"name": "nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "http://localhost:4000/api/products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products"
+							]
+						},
+						"description": "Products Index"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/products/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/products/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						},
+						"description": "Show ID"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/products",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image\" : \"LG mobile\",\r\n    \"detail\" : \"LG\",\r\n    \"price\" : 900,\r\n    \"shipping_cost\" : 90\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products"
+							]
+						},
+						"description": "Create Product"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/products/2",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image\" : \"LG mobile\",\r\n    \"detail\" : \"LG\",\r\n    \"price\" : 500,\r\n    \"shipping_cost\" : 50\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/products/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products",
+								"2"
+							]
+						},
+						"description": "Update Product"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/products/3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/products/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products",
+								"3"
+							]
+						},
+						"description": "DELETE Product"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carts",
+			"item": [
+				{
+					"name": "http://localhost:4000/api/carts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/carts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"carts"
+							]
+						},
+						"description": "Index Carts"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/carts/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/carts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"carts",
+								"1"
+							]
+						},
+						"description": "Index only one"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/carts",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productid\" : 2,\r\n    \"userid\" : 2,\r\n    \"quantity\" : 30\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/carts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"carts"
+							]
+						},
+						"description": "Create Carts"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/carts/2",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productid\" : 30,\r\n    \"userid\" : 30,\r\n    \"quantity\" : 100\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/carts/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"carts",
+								"2"
+							]
+						},
+						"description": "Update Cart"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/carts/3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/carts/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"carts",
+								"3"
+							]
+						},
+						"description": "Delete Cart"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": []
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "http://localhost:4000/api/users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"test5\",\n\t\"password\": \"password5\",\n\t\"passwordConfirmation\": \"password5\",\n\t\"name\": \"steven\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users"
+							]
+						},
+						"description": "User Create"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/auth/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"test4\",\n\t\"password\": \"password4\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						},
+						"description": "GET token"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/users/test4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZDM3Y2Q1OTdmNzM0ZDU2MzBhMzE4MjEiLCJ1c2VybmFtZSI6InRlc3Q0IiwiaWF0IjoxNTYzOTM4NzQyLCJleHAiOjE1NjQwMjUxNDJ9.1M69-Kt1BK7Dc3sL-TT_6iippWkDriO2byPjkvZvbzs",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users/test4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users",
+								"test4"
+							]
+						},
+						"description": "Login"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/users/test4",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZDM3Y2Q1OTdmNzM0ZDU2MzBhMzE4MjEiLCJ1c2VybmFtZSI6InRlc3Q0IiwiaWF0IjoxNTYzOTM4NzQyLCJleHAiOjE1NjQwMjUxNDJ9.1M69-Kt1BK7Dc3sL-TT_6iippWkDriO2byPjkvZvbzs",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"currentPassword\": \"password4\",\r\n    \"username\": \"test4\",\r\n    \"newPassword\": \"password4\",\r\n    \"passwordConfirmation\": \"password4\",\r\n    \"name\": \"steven\",\r\n    \"email\": \"photo10004@gmail.com\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users/test4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users",
+								"test4"
+							]
+						},
+						"description": "User Update"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/users/test4",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZDM3Y2Q1OTdmNzM0ZDU2MzBhMzE4MjEiLCJ1c2VybmFtZSI6InRlc3Q0IiwiaWF0IjoxNTYzOTM4NzQyLCJleHAiOjE1NjQwMjUxNDJ9.1M69-Kt1BK7Dc3sL-TT_6iippWkDriO2byPjkvZvbzs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users/test4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users",
+								"test4"
+							]
+						},
+						"description": "Delete User"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
